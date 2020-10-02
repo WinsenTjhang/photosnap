@@ -286,7 +286,7 @@ nav {
   }
   .invite-btn {
     width: 158px;
-    height: 48px;
+    height: 40px;
     background-color: black;
     color: white;
     display: flex;
@@ -303,6 +303,8 @@ nav {
 
 .story-page {
   padding: 317px 0 48px;
+  background: url("../assets/stories/mobile/moon-of-appalacia.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .story-page h1 {
@@ -313,8 +315,6 @@ nav {
   color: white;
   position: relative;
   height: 375px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/mountains.jpg") no-repeat center;
-  background-size: cover;
   transition: .4s;
 }
 
@@ -382,10 +382,92 @@ nav {
   padding-bottom: 4px;
 }
 
+.mountains {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/mountains.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.sunset {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/cityscapes.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.voyage {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/18-days-voyage.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.architecturals {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/architecturals.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.world-tour {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/world-tour.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.unforeseen-corners {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/unforeseen-corners.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.king-on-africa {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/king-on-africa.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.trip-to-nowhere {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/trip-to-nowhere.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.rage-of-the-sea {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/rage-of-the-sea.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.running-free {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/running-free.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.behind-the-waves {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/behind-the-waves.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.calm-waters {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/calm-waters.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.milky-way {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/milky-way.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.dark-forest {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/dark-forest.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.somwarpet {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/somwarpet.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.land-of-dreams {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/mobile/land-of-dreams.jpg") no-repeat center;
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
   .story-page {
     padding: 0;
     height: 768px;
+    background: url("../assets/stories/tablet/moon-of-appalacia.jpg") no-repeat center;
+    background-size: cover;
   }
   .story-page .wrapper {
     justify-content: flex-start;
@@ -417,10 +499,28 @@ nav {
   }
   .story-page {
     height: 600px;
+    background: url("../assets/stories/desktop/moon-of-appalacia.jpg") no-repeat center;
+    background-size: cover;
   }
   .story-page .content {
     padding-left: 122px;
     width: 509px;
+  }
+  .mountains {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/desktop/mountains.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .sunset {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/desktop/cityscapes.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .voyage {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/desktop/18-days-voyage.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .architecturals {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url("../assets/stories/desktop/architecturals.jpg") no-repeat center;
+    background-size: cover;
   }
 }
 
