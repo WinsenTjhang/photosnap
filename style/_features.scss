@@ -1,0 +1,123 @@
+.features-page {
+
+    .content {
+        padding: 72px 0;
+    }
+
+}
+
+.features {
+    padding-top: 80px;
+    font-size: 18px;
+    line-height: 25px;
+    @include center;
+    flex-wrap: wrap;
+
+    img {
+        padding-bottom: 46px;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    .text {
+        font-size: 14px;
+
+    }
+}
+
+.feature-wrapper {
+    @include center;
+    width: 310px;
+    margin: 0 10px;
+}
+
+.feature-content {
+    text-align: center;
+    padding-bottom: 56px;
+    width: 457px;
+
+    .img-wrapper {
+        @include center;
+        height: 120px;
+    }
+}
+
+.beta {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%),
+        url("../assets/shared/mobile/bg-beta.jpg") no-repeat center;
+    height: 288px;
+
+    .link {
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .features-page {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 0;
+        height: 490px;
+
+        .content {
+            padding: 0;
+        }
+
+        .gradient {
+            height: 144px;
+        }
+
+        .text {
+            padding-bottom: 0;
+        }
+    }
+
+    .feature-wrapper{
+         width: 100%;
+         margin: 0;
+    }
+
+    .feature-content {
+        width: 457px;
+
+        .text {
+            padding-top: 16px;
+        }
+    }
+
+
+    .beta {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%),
+            url("../assets/shared/tablet/bg-beta.jpg") no-repeat center;
+        background-size: cover;
+
+        .content {
+            @include center;
+            justify-content: space-between;
+            max-width: unset;
+            width: 90%;
+        }
+
+        .gradient {
+            height: 100%;
+        }
+
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    .features{
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .feature-wrapper {
+        margin: 0 20px;
+        width: 350px;
+    }
+}

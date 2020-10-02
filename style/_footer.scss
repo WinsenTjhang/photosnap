@@ -1,0 +1,163 @@
+.icons {
+    display: flex;
+    justify-content: space-between;
+
+    svg path {
+        fill: white;
+    }
+
+    svg:hover path {
+        fill: url(#a);
+        cursor: pointer;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+
+    li {
+        line-height: 16px;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+
+        &:hover {
+            opacity: 0.3;
+            cursor: pointer;
+        }
+    }
+
+    a {
+        color: white;
+    }
+
+    .arrow {
+        filter: invert(1);
+    }
+
+    .link {
+        letter-spacing: 2.5px;
+        font-size: 0.8rem;
+        color: white;
+    }
+
+}
+
+.copyright {
+    opacity: 0.5;
+    font-size: 0.85rem;
+    line-height: 20px;
+}
+
+.footer-mobile {
+    text-align: center;
+
+    .footer-logo {
+        margin-top: 56px;
+    }
+
+    .icons {
+        padding-top: 32px;
+        width: 154px;
+        margin: auto;
+    }
+
+    ul {
+        padding: 49px 0 100px;
+
+        li {
+            padding-bottom: 19px;
+        }
+    }
+
+    .invite-wrapper {
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .copyright {
+        padding-bottom: 56px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    .footer-desktop {
+        @include center;
+
+        .invite-wrapper{
+            height: 20px;
+        }
+
+        .icons{
+            width: 150px;
+        }
+    }
+
+    .footer-wrapper {
+        width: 85%;
+    }
+
+    .top,
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top {
+        padding: 64px 0 32px;
+    }
+
+    .bottom {
+        padding: 72px 0 64px;
+    }
+
+    .footer-desktop {
+
+        ul {
+            
+            li {
+                display: inline-block;
+                padding-right: 20px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .footer-wrapper {
+        position: relative;
+        width: 1104px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 279px;
+
+        li{
+            padding-bottom: 25px;
+
+            a{
+                font-size: 1.1rem;
+            }
+            
+        }
+    }
+
+    .invite-wrapper{
+        .link{
+            font-size: 1rem;
+        }
+    }
+
+    .copyright{
+        font-size: 1rem;
+    }
+}

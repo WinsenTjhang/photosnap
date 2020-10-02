@@ -1,0 +1,132 @@
+nav {
+    padding: 28px 24px;
+    position: relative;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.dropbtn,
+.closebtn {
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 375px;
+    z-index: 1;
+    top: 72px;
+    left: 0;
+
+    .nav-wrapper {
+        @include center;
+        padding: 22px 0 32px;
+        flex-direction: column;
+    }
+
+    a {
+        color: black;
+        padding: 10px 0;
+        display: block;
+        font-weight: 700;
+        font-size: 0.9375rem;
+        line-height: 19.53px;
+        text-align: center;
+        letter-spacing: 2.5px;
+        cursor: pointer;
+    }
+
+    hr {
+        width: 310px;
+        margin: 12px 0 22px;
+    }
+
+    .invite-btn {
+        width: 310px;
+        height: 48px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .dropbtn {
+        display: none !important;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        height: 72px;
+    }
+
+    .nav-elements{
+        display: flex;
+        align-items: center;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 300px;
+
+        a {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 19.53px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            color: black;
+
+            &:hover{
+                color: #DFDFDFDF;
+            }
+        }
+ 
+    }
+
+    .invite-btn {
+        width: 158px;
+        height: 48px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2.5px;
+        font-size: 12px;
+        
+
+        &:hover {
+            background-color: #DFDFDFDF;
+            color: black;
+        }
+
+    }
+}

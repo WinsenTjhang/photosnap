@@ -1,0 +1,134 @@
+.story-page {
+    padding: 317px 0 48px;
+
+    h1 {
+        padding: 16px 0;
+    }
+}
+
+.story-box {
+    color: white;
+    position: relative;
+    height: 375px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%),
+        url("../assets/stories/mobile/mountains.jpg") no-repeat center;
+    background-size: cover;
+    transition: .4s;
+
+    .s-wrapper {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        width: 375px;
+        padding: 0 30px 15px;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .writer {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    hr {
+        opacity: 0.25;
+        margin-top: 16px;
+    }
+
+    .invite-wrapper {
+        justify-content: space-between;
+
+        .link {
+            color: white;
+        }
+    }
+
+    .arrow {
+        filter: invert(1);
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.edition {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.date,
+.writer {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.stories .date {
+    opacity: 0.75;
+}
+
+.story-box .date {
+    font-size: 13px;
+    line-height: 17px;
+    padding-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+
+.story-page{
+    padding: 0;
+    height: 768px;
+    
+    .wrapper{
+        justify-content: flex-start;
+    }
+
+    .content{
+        padding-left: 39px;
+    }
+}
+
+    .stories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .story-box {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%),
+            url("../assets/stories/desktop/mountains.jpg") no-repeat cover;
+        width: 50%;
+        min-width: 300px;
+        height: 500px;
+        cursor: pointer;
+
+        &:hover {
+            transform: translate(0, -10px);
+            transition: .4s;
+        }
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .story-box{
+        width: 25%;
+    }
+
+    .story-page{
+        height: 600px;
+
+        .content{
+            padding-left: 122px;
+            width: 509px;
+        }
+    }
+
+}

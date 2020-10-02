@@ -1,0 +1,329 @@
+.pricing-page {
+    .content {
+        padding: 72px 0;
+    }
+}
+
+
+
+// Toggle
+
+.toggle {
+    @include center;
+    padding: 64px 0 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin: 0 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DFDFDFDF;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(30px);
+    background-color: white;
+}
+
+input:checked+.slider {
+    background-color: black;
+}
+
+// Cards
+.card {
+    background-color: #F5F5F5;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+    width: 318px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    .type {
+        padding-bottom: 18px;
+        font-size: 2rem;
+    }
+
+    p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 25px;
+        opacity: 0.6;
+        mix-blend-mode: normal;
+        padding: 0 22px;
+    }
+
+    .price {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    button {
+        width: 245px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        letter-spacing: 2px;
+        margin: 40px 0 40px;
+        border-style: none;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover{
+            background-color: #DFDFDF;
+            color: black;
+        }
+    }
+
+}
+
+.pro {
+    background-color: black;
+    color: white;
+    position: relative;
+
+    button {
+        background-color: #F5F5F5;
+        color: black;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #DFDFDF;
+            color: black;
+        }
+    }
+}
+
+.card-gradient {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    top: 0;
+}
+
+.yearly,
+.monthly {
+    display: none;
+}
+
+.compare {
+    width: 318px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 16px;
+    letter-spacing: 2px;
+
+    >hr {
+        margin-bottom: 23px;
+        border-style: solid;
+    }
+}
+
+.c-wrapper {
+    hr {
+        margin-bottom: 23px;
+    }
+}
+
+.c-title {
+    padding: 64px 0 23px;
+}
+
+.available {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 24px;
+
+    h5 {
+        padding-bottom: 7px;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .pricing-page {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 0;
+        height: 490px;
+
+        .content {
+            padding: 0;
+        }
+
+        .gradient {
+            height: 144px;
+        }
+
+        .text {
+            padding-bottom: 0;
+        }
+    }
+
+    .card {
+        width: 689px;
+        text-align: left;
+        position: relative;
+
+        .card-content {
+            padding-left: 40px;
+            width: 290px;
+        }
+
+        p {
+            padding: 0;
+        }
+
+        button {
+            margin: 32px 40px 40px;
+        }
+
+    }
+
+    .price {
+        position: absolute;
+        top: 5px;
+        right: 48px;
+        letter-spacing: 4.16667px;
+
+        p {
+            letter-spacing: 2px;
+            text-align: right;
+        }
+    }
+
+    .card-gradient {
+        height: 100%;
+        width: 6px;
+        left: 0;
+        top: 0;
+    }
+
+    .compare {
+        padding-top: 72px;
+        width: 689px;
+
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        hr {
+            margin: 23.5px 0;
+        }
+
+        hr:nth-of-type(1) {
+            border-style: solid;
+        }
+
+    }
+
+    .c-wrapper {
+        padding: 64px 0 112px;
+    }
+
+    .table-head,
+    .table-component {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    }
+
+    .check-box {
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    .pricing{
+        @include center;
+    }
+
+    .cards {
+        @include center;
+        width: 1110px;
+        padding-bottom: 90px;
+    }
+
+    .card {
+        width: 350px;
+        height: 407px;
+        margin: 0;
+        @include center;
+        flex-direction: column;
+        text-align: center;
+
+        .card-content {
+            padding: 0;
+        }
+
+        button {
+            margin: 32px 0 40px;
+        }
+
+    }
+
+    .pro {
+        height: 470px;
+        margin: 0 30px;
+    }
+
+    .price {
+        position: unset;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .card-gradient{
+        width: 100%;
+        height: 6px;
+    }
+
+}
